@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Aspect
 public class EmployeeServiceAspect {
-    private final Logger logger= LoggerFactory.getLogger(EmployeeServiceAspect.class);
+    private Logger logger= LoggerFactory.getLogger(EmployeeServiceAspect.class);
 
     @Before("execution(* com.example.demo.service.impl.EmployeeServiceImpl.*(..))")
     public void before(JoinPoint joinPoint){
