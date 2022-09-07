@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Aspect
 public class DepartmentServiceAspect {
-    private Logger logger= LoggerFactory.getLogger(DepartmentServiceAspect.class);
+    private final Logger logger= LoggerFactory.getLogger(DepartmentServiceAspect.class);
 
     @Before("execution(* com.example.demo.service.impl.DepartmentServiceImpl.*(..))")
     public void before(JoinPoint joinPoint){
@@ -25,6 +25,6 @@ public class DepartmentServiceAspect {
     }
     @AfterThrowing("execution(* com.example.demo.service.impl.DepartmentServiceImpl.*(..))")
     public  void afterThrowing(JoinPoint joinPoint) {
-        logger.info("Error when call "+joinPoint.toString());
+        logger.error("Error when call "+joinPoint.toString());
     }
 }
