@@ -106,5 +106,11 @@
     "error": null
 }
 ```
+## 3. Logging
+- Logging Employee:
+```
+-2022-09-08 09:28:55.925  INFO 5684 --- [nio-9081-exec-8] c.e.demo.aop.DepartmentServiceAspect     : Before called execution(DepartmentDto com.example.demo.service.impl.DepartmentServiceImpl.getDepartmentDto(DepartmentDto))
+-2022-09-08 09:28:55.941  INFO 5684 --- [nio-9081-exec-8] c.e.demo.aop.DepartmentServiceAspect     : After called execution(DepartmentDto com.example.demo.service.impl.DepartmentServiceImpl.getDepartmentDto(DepartmentDto))
+```
 
 
