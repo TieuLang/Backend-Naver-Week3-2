@@ -71,6 +71,23 @@
 - Request: POST http://localhost:9081/likelion/TestDepartment 
 ```
 {
+    "departmentId": 1,
+    "deptName": "asdasasdasd",
+    "description": "abc",
+    "employeeDtoList": [
+        {
+            "employeeId": 1,
+            "name": "abc",
+            "birthDate": "2000-01-01",
+            "gender": "male",
+            "email": "a@gmail.com"
+        }
+    ]
+}
+```
+- Response:
+```
+{
     "status": "success",
     "departmentDto": {
         "departmentId": 1,
