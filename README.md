@@ -109,6 +109,11 @@
 ## 3. Logging
 - Logging Employee:
 ```
+-2022-09-08 09:29:52.061  INFO 5684 --- [nio-9081-exec-9] c.e.demo.aop.EmployeeServiceAspect       : Before called execution(EmployeeDto com.example.demo.service.impl.EmployeeServiceImpl.getEmployeeDto(EmployeeDto))
+-2022-09-08 09:29:52.066  INFO 5684 --- [nio-9081-exec-9] c.e.demo.aop.EmployeeServiceAspect       : After called execution(EmployeeDto com.example.demo.service.impl.EmployeeServiceImpl.getEmployeeDto(EmployeeDto))
+```
+- Logging Department:
+```
 -2022-09-08 09:28:55.925  INFO 5684 --- [nio-9081-exec-8] c.e.demo.aop.DepartmentServiceAspect     : Before called execution(DepartmentDto com.example.demo.service.impl.DepartmentServiceImpl.getDepartmentDto(DepartmentDto))
 -2022-09-08 09:28:55.941  INFO 5684 --- [nio-9081-exec-8] c.e.demo.aop.DepartmentServiceAspect     : After called execution(DepartmentDto com.example.demo.service.impl.DepartmentServiceImpl.getDepartmentDto(DepartmentDto))
 ```
